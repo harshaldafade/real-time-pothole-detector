@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30sp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Magnitude"
+        android:textColor="#2196F3"
+        android:layout_marginLeft="75sp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xValue"
+        android:layout_marginTop="50sp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yValue"
+        android:layout_marginLeft="180sp"
+        android:textSize="20dp"
+        android:layout_marginTop="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zValue"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="75sp"
+        android:textSize="20dp"
+        android:layout_below="@+id/yValue"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer"
+        android:textColor="#2196F3"
+        android:textSize="30dp"
+        android:layout_marginLeft="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/zValue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accxValue"
+        android:layout_marginTop="80sp"
+        android:textSize="20dp"
+        android:layout_below="@+id/zValue"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accyValue"
+        android:textSize="20dp"
+        android:layout_marginLeft="180sp"
+        android:layout_marginTop="80sp"
+        android:layout_below="@+id/zValue"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/acczValue"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="75sp"
+        android:textSize="20dp"
+        android:layout_below="@+id/accxValue"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gyroscope"
+        android:textColor="#2196F3"
+        android:textSize="30dp"
+        android:layout_marginLeft="75sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/acczValue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gyroxValue"
+        android:layout_below="@+id/acczValue"
+        android:layout_marginTop="80sp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gyroyValue"
+        android:textSize="20dp"
+        android:layout_marginLeft="180sp"
+        android:layout_marginTop="80sp"
+        android:layout_below="@+id/acczValue"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gyrozValue"
+        android:layout_below="@+id/gyroyValue"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="85sp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PotholeValue"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/gyrozValue"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/ShowMapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PotholeValue"
+        android:layout_marginTop="30sp"
+        android:onClick="goToMap"
+        android:text="Show Map"
+        android:visibility="invisible" />
+
+</RelativeLayout>
