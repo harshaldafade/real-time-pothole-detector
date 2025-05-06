@@ -21,23 +21,6 @@ This project combines **mobile sensing**, **deep learning (LSTM)**, and **Flask-
 
 ---
 
-## 📁 Folder Structure
-
-```
-Real-Time pothole detection and mapping/
-├── Dataset/                      # Raw datasets
-├── merged dataset/              # Combined and processed dataset
-├── Pothole_Non_Pothole/         # Class-wise data split
-├── Pothole-detection-main/      # Android App Source
-│   ├── app/src/...              # Java app code and resources
-│   └── gradle/...               # Gradle build system
-├── python/                      # Python ML + Flask scripts
-│   ├── LSTM_model.ipynb         # Jupyter Notebook for training LSTM
-│   ├── lstm_model.h5            # Saved LSTM model
-│   └── flask_app.ipynb          # Flask API for model inference
-```
-
----
 
 ## 📱 Android App Features
 
@@ -78,11 +61,6 @@ Real-Time pothole detection and mapping/
 ```bash
 cd python/
 python flask_app.ipynb  # or convert it to .py for deployment
-```
-
-Expose API using ngrok:
-```bash
-ngrok http 5000
 ```
 
 ---
