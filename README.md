@@ -100,6 +100,6 @@ python flask_app.ipynb
 
 ## 📜 License
 
-MIT License — feel free to modify and use.
+feel free to modify and use. This is not full production grade project I have made in collaboration with UMass Lowell, this is part free to use.
 
 ---
